@@ -1,0 +1,8 @@
+.header{
+    height: 200px;
+    background-color: rgb(20, 20, 20);
+    color:rgb(233, 232, 232);
+    padding-top: 10vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+}

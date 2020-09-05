@@ -4,7 +4,7 @@ import Comments from '../Comments/Comments';
 import Photos from '../Photos/Photos';
 import Photo from '../FakePhoto/Photo';
 
-
+// postDetail.js
 
 const PostDetail = () => {
     const {postId} = useParams();
@@ -35,7 +35,6 @@ const PostDetail = () => {
             <h4>Post Details {postId}</h4>
             <h6 >{postDetail.body}</h6>
             <h5>Post Comments</h5>
-          
             {
                  photo.map(photo => <Photos photo={photo}></Photos>)
              }
@@ -43,8 +42,6 @@ const PostDetail = () => {
                  comment.map(comment => <Comments comment={comment}
                  ></Comments>)
              }
-            
-             
         </div>
     );
 };

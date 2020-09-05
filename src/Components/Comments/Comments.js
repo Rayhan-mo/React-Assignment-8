@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-
+// comment.js new component
 const Comments = (props) => {
     const {name, body} = props.comment;
 
