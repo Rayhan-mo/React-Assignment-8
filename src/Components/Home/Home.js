@@ -15,7 +15,7 @@ const Home = () => {
         .then(data => setPost(data));
     }, [])
     return (
-        <div>
+        <div className="home">
         <CssBaseline />
         <Container maxWidth="auto">
         <Typography component="div" style={{ backgroundColor: '#cfe8fc', height: 'auto', width:'100%' }} >
@@ -30,11 +30,5 @@ const Home = () => {
         </div>
     );
 };
-function SimpleContainer() {
-  return (
-    <React.Fragment>
-      
-    </React.Fragment>
-  );
-}
+
 export default Home;

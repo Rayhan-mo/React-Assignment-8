@@ -8,7 +8,7 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 
  const Post = (props) => {
-    const {title, id} = props.post;
+    const {title, id, name} = props.post;
     const classes = useStyles();
     return (
        <div  className={classes.root}>
@@ -16,8 +16,9 @@ import Typography from '@material-ui/core/Typography';
           <Grid container wrap="nowrap" spacing={2}>
           <Grid item xs>
             <Typography>
-            <h1>Post</h1>
-            <h2>{title}</h2>{message}
+            <h1>Post {id}</h1>
+            <h2>{title}</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.....</p>{message}
             <p><Link className='button' to={`/post/${id}`}>
             <Button  variant="contained" color="primary">Show detail post</Button>
             </Link></p>
@@ -41,10 +42,5 @@ const useStyles = makeStyles((theme) => ({
     },
   }));
 const message = ``;
-  function AutoGridNoWrap() {
-  return (
-    <div>
-    </div>
-  );
-}
+
 export default Post;

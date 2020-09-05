@@ -4,5 +4,9 @@
     color:rgb(233, 232, 232);
     padding-top: 10vh;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    width: 100%;
+}
+.home{
+    background-color: black;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }

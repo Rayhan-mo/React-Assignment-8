@@ -10,7 +10,6 @@ import Home from './Components/Home/Home';
 import NoMatch from './Components/NoMatch/NoMatch';
 import PostDetail from './Components/PostDetail/PostDetail';
 
-
 function App() {
   return (
     <div className="App">
@@ -24,10 +23,10 @@ function App() {
             <PostDetail/>
           </Route>
           <Route exact path="/">
-            <Home></Home>
+            <Home/>
           </Route>
           <Route path="*">
-            <NoMatch></NoMatch>
+            <NoMatch/>
           </Route>
         </Switch>
       </Router>
